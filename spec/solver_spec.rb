@@ -35,5 +35,11 @@ describe 'Solver TDD' do
       solver = Solver.new()
       expect(solver.fizzbuzz(number)).to eq(response_string)
      end
+     it 'any other number correct' do
+      number=31
+      response_string= '31'
+      solver = Solver.new()
+      expect(solver.fizzbuzz(number)).to eq(response_string)
+     end
   end
 end

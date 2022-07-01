@@ -22,7 +22,7 @@ class Solver
                   elsif buzz
                        return "buzz"
                   else
-                      return num
+                      return num.to_s
                  end
              end
 end    
