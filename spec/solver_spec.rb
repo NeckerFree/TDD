@@ -16,10 +16,22 @@ describe 'Solver TDD' do
       expect(solver.reverse(word)).to eq(actual)
      end
   end
-  context 'Fizzbuzz Test' do
-    it 'validate fizzbuzz string' do
+  context 'Fizzbuzz method Test' do
+    it 'fizzbuzz correct' do
       number=15
       response_string= 'fizzbuzz'
+      solver = Solver.new()
+      expect(solver.fizzbuzz(number)).to eq(response_string)
+     end
+      it 'fizz correct' do
+      number=3
+      response_string= 'fizz'
+      solver = Solver.new()
+      expect(solver.fizzbuzz(number)).to eq(response_string)
+     end
+     it 'buzz correct' do
+      number=5
+      response_string= 'buzz'
       solver = Solver.new()
       expect(solver.fizzbuzz(number)).to eq(response_string)
      end
